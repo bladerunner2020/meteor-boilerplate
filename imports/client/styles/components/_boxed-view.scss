@@ -1,0 +1,33 @@
+.boxed-view {
+    background: $boxed-view-overlay-bg;
+
+    // These 3 properties create the box in the center
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+    width: 100vv;
+}
+
+.boxed-view__box {
+    background: $boxed-view-bg;
+    padding: 2.4rem;
+    text-align: center;
+    width: 24rem;
+}
+
+.boxed-view__form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.boxed-view--modal {
+    background: fade-out($color: $boxed-view-overlay-bg, $amount: 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
